@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SABA TOWER-JLT E</title>
+<meta charset="utf-8">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<style> @-ms-viewport { width: device-width; } </style>
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="multiple-scenes ">
+
+<div id="pano"></div>
+
+<div id="sceneList">
+  <ul class="scenes">
+    
+      <a href="javascript:void(0)" class="scene" data-id="0-lounge1">
+        <li class="text">lounge1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="1-lounge2">
+        <li class="text">lounge2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="2-ceo11">
+        <li class="text">ceo11</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="3-ce012">
+        <li class="text">ce012</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="4-ceo13">
+        <li class="text">ceo13</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="5-ceo21">
+        <li class="text">ceo21</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="6-ceo-22">
+        <li class="text">ceo 22</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="7-ceo23">
+        <li class="text">ceo23</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="8-ceo31">
+        <li class="text">ceo31</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="9-ceo32">
+        <li class="text">ceo32</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="10-ceo33">
+        <li class="text">ceo33</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="11-board-room-1">
+        <li class="text">Board Room 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="12-board-room-2">
+        <li class="text">Board Room 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="13-tl">
+        <li class="text">TL</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="14-reception1">
+        <li class="text">Reception1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="15-reception2">
+        <li class="text">Reception2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="16-pantry1">
+        <li class="text">pantry1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="17-pantry-2">
+        <li class="text">pantry 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="18-work1">
+        <li class="text">work1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="19-work2">
+        <li class="text">work2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="20-work3">
+        <li class="text">work3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="21-work4">
+        <li class="text">work4</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="22-booths">
+        <li class="text">booths</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="23-manager-1">
+        <li class="text">manager 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="24-manager-12">
+        <li class="text">manager 12</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="25-manager-2">
+        <li class="text">manager 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="26-meeting-room">
+        <li class="text">Meeting Room</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="27-meeting-room1">
+        <li class="text">Meeting Room1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="28-meeting-room2">
+        <li class="text">Meeting Room2</li>
+      </a>
+    
+  </ul>
+</div>
+
+<div id="titleBar">
+  <h1 class="sceneName"></h1>
+</div>
+
+<a href="javascript:void(0)" id="autorotateToggle">
+  <img class="icon off" src="img/play.png">
+  <img class="icon on" src="img/pause.png">
+</a>
+
+<a href="javascript:void(0)" id="fullscreenToggle">
+  <img class="icon off" src="img/fullscreen.png">
+  <img class="icon on" src="img/windowed.png">
+</a>
+
+<a href="javascript:void(0)" id="sceneListToggle">
+  <img class="icon off" src="img/expand.png">
+  <img class="icon on" src="img/collapse.png">
+</a>
+
+<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+  <img class="icon" src="img/up.png">
+</a>
+<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+  <img class="icon" src="img/down.png">
+</a>
+<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+  <img class="icon" src="img/left.png">
+</a>
+<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+  <img class="icon" src="img/right.png">
+</a>
+<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+  <img class="icon" src="img/plus.png">
+</a>
+<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+  <img class="icon" src="img/minus.png">
+</a>
+
+<script src="vendor/screenfull.min.js" ></script>
+<script src="vendor/bowser.min.js" ></script>
+<script src="vendor/marzipano.js" ></script>
+
+<script src="data.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
